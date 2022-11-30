@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/antik/dev/jeff-bot/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220828.0/
+anonymousObject0f5e4cfc0105	deploy-commands.js	/^const rest = new REST({ version: '10' }).setToken(token);$/;"	v
+anonymousObject0f5e4cfc0205	deploy-commands.js	/^			{ body: commands },$/;"	v
+anonymousObject66e3de480105	index.js	/^const client = new Client({ intents: [GatewayIntentBits.Guilds] });$/;"	v
+anonymousObject66e3de480205	index.js	/^      await interaction.reply({ content: 'There was an error while executing this command.', eph/;"	v
+author	package.json	/^  "author": "antik",$/;"	s
+body	deploy-commands.js	/^			{ body: commands },$/;"	p	variable:anonymousObject0f5e4cfc0205
+client	index.js	/^const client = new Client({ intents: [GatewayIntentBits.Guilds] });$/;"	C
+command	deploy-commands.js	/^	const command = require(`.\/commands\/${file}`);$/;"	C
+command	index.js	/^  const command = interaction.client.command.get(interaction.commandName);$/;"	C
+command	index.js	/^  const command = require(filePath);$/;"	C
+commandFiles	deploy-commands.js	/^const commandFiles = fs.readdirSync('.\/commands').filter(file => file.endsWith('.js'));$/;"	C
+commandFiles	index.js	/^const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));$/;"	C
+commands	deploy-commands.js	/^const commands = [];$/;"	v
+commands	index.js	/^client.commands = new Collection();$/;"	v	constant:client
+commandsPath	index.js	/^const commandsPath = path.join(__dirname, 'commands');$/;"	C
+content	index.js	/^      await interaction.reply({ content: 'There was an error while executing this command.', eph/;"	p	variable:anonymousObject66e3de480205
+data	commands/ping.js	/^  data: new SlashCommandBuilder()$/;"	p	property:module.exports
+data	deploy-commands.js	/^		const data = await rest.put($/;"	C
+description	package.json	/^  "description": "jeff bot",$/;"	s
+ephemeral	index.js	/^      await interaction.reply({ content: 'There was an error while executing this command.', eph/;"	p	variable:anonymousObject66e3de480205
+execute	commands/ping.js	/^  async execute(interaction) {$/;"	m	property:module.exports
+filePath	index.js	/^  const filePath = path.join(commandsPath, file);$/;"	C
+fs	deploy-commands.js	/^const fs = require('node:fs');$/;"	C
+fs	index.js	/^const fs = require('node:fs');$/;"	C
+intents	index.js	/^const client = new Client({ intents: [GatewayIntentBits.Guilds] });$/;"	p	variable:anonymousObject66e3de480105
+license	package.json	/^  "license": "ISC"$/;"	s
+main	package.json	/^  "main": "index.js",$/;"	s
+module.exports	commands/ping.js	/^module.exports = {$/;"	p
+name	package.json	/^  "name": "jeff-bot",$/;"	s
+path	index.js	/^const path = require('node:path');$/;"	C
+scripts	package.json	/^  "scripts": {$/;"	o
+test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	s	object:scripts
+version	deploy-commands.js	/^const rest = new REST({ version: '10' }).setToken(token);$/;"	p	variable:anonymousObject0f5e4cfc0105
+version	package.json	/^  "version": "1.0.0",$/;"	s

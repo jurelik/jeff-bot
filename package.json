@@ -1,0 +1,15 @@
+{
+  "name": "jeff-bot",
+  "version": "1.0.0",
+  "description": "jeff bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antik",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.0",
+    "dotenv": "^16.0.3"
+  }
+}
