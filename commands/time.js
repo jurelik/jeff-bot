@@ -11,8 +11,14 @@ module.exports = {
     //Check if compo is running
     if (currentDate.getDay() == 0) {
       if (currentDate.getHours() >= 20 && currentDate.getHours() < 23) {
-        await interaction.reply('2HTS is currently in progress!');
-        return;
+        try {
+          await interaction.reply('2HTS is currently in progress!');
+          return;
+        }
+        catch (err) {
+          console.error(`[ERROR]: ${err}`);
+          return;
+        }
       }
     }
 
@@ -27,6 +33,11 @@ module.exports = {
 
     let result = `Time until next 2HTS: ${diffDays} Days, ${diffHrs} Hours, ${diffMins} Minutes.`;
 
-    await interaction.reply(result);
+    try {
+      await interaction.reply(result);
+    }
+    catch (err) {
+      console.error(`[ERROR]: ${err}`);
+    }
   }
 }

@@ -21,6 +21,11 @@ module.exports = {
     let result = 'Link to Chorus: <http://chorus.thasauce.net:8000/compo.m3u>\n' +
                  `Link to the latest compo: <http://compo.thasauce.net/rounds/view/2HTS${compoId}>`
 
-    await interaction.reply(result);
+    try {
+      await interaction.reply(result);
+    }
+    catch (err) {
+      console.error(`[ERROR]: ${err}`);
+    }
   }
 }
