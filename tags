@@ -25,18 +25,24 @@ commands	deploy-commands.js	/^const commands = [];$/;"	v
 commands	index.js	/^client.commands = new Collection();$/;"	v	constant:client
 commandsPath	index.js	/^const commandsPath = path.join(__dirname, 'commands');$/;"	C
 content	index.js	/^      await interaction.reply({ content: 'There was an error while executing this command.', eph/;"	p	variable:anonymousObject66e3de480205
+data	commands/link.js	/^  data: new SlashCommandBuilder()$/;"	p	property:module.exports
 data	commands/ping.js	/^  data: new SlashCommandBuilder()$/;"	p	property:module.exports
+data	commands/time.js	/^  data: new SlashCommandBuilder()$/;"	p	property:module.exports
 data	deploy-commands.js	/^		const data = await rest.put($/;"	C
 description	package.json	/^  "description": "jeff bot",$/;"	s
 ephemeral	index.js	/^      await interaction.reply({ content: 'There was an error while executing this command.', eph/;"	p	variable:anonymousObject66e3de480205
+execute	commands/link.js	/^  async execute(interaction) {$/;"	m	property:module.exports
 execute	commands/ping.js	/^  async execute(interaction) {$/;"	m	property:module.exports
+execute	commands/time.js	/^  async execute(interaction) {$/;"	m	property:module.exports
 filePath	index.js	/^  const filePath = path.join(commandsPath, file);$/;"	C
 fs	deploy-commands.js	/^const fs = require('node:fs');$/;"	C
 fs	index.js	/^const fs = require('node:fs');$/;"	C
 intents	index.js	/^const client = new Client({ intents: [GatewayIntentBits.Guilds] });$/;"	p	variable:anonymousObject66e3de480105
 license	package.json	/^  "license": "ISC"$/;"	s
 main	package.json	/^  "main": "index.js",$/;"	s
+module.exports	commands/link.js	/^module.exports = {$/;"	p
 module.exports	commands/ping.js	/^module.exports = {$/;"	p
+module.exports	commands/time.js	/^module.exports = {$/;"	p
 name	package.json	/^  "name": "jeff-bot",$/;"	s
 path	index.js	/^const path = require('node:path');$/;"	C
 scripts	package.json	/^  "scripts": {$/;"	o
